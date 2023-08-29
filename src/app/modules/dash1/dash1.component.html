@@ -1,0 +1,105 @@
+<!-- <div style="background-color: antiquewhite;height: 50px;margin-top: 0;"> -->
+
+    <!-- <body style="background-color:#003268 ;"> -->
+
+    <h1  style="height: 80px; color: white;" class="pl-3" > Talent Hunt</h1>
+
+<!-- </div> -->
+
+ 
+
+ 
+
+<div class="px-3">
+
+<div class="flex" >
+
+    <div class="flex flex-column w-3 mr-3">
+
+        <label class="pb-2" style="color: white; font-size: larger;"   >Manager</label>
+
+        <p-dropdown class="w-100" [options]="managerSet" [(ngModel)]="selectedManager" placeholder="Select Managername" defaultLabel="Select Manager" optionLabel="Managername" display="chip"></p-dropdown>
+
+    </div>
+
+ 
+
+    <div class="flex flex-column w-3 mr-3">
+
+        <label class="pb-2" style="color: white; font-size: larger;" >Skill set</label>
+
+        <p-multiSelect class="w-100" [options]="skillSet" [(ngModel)]="selectedSkill" defaultLabel="Select skills" optionLabel="skills" display="chip"></p-multiSelect>
+
+    </div>
+
+    <div class="card flex flexalign-it;" style="margin-top: 30px;margin-left:10px; color: #9b1631; ">
+
+        <p-button label="Submit"(click)="submitForm()" class="w-100" styleClass="p-button-danger"></p-button>
+
+    </div>
+
+ 
+
+    <!-- <div *ngIf="selectedSkill.length > 0">
+
+ 
+
+        <label>Selected Skill :</label>
+
+        <ul>
+
+          <li *ngFor="let item of selectedSkill">
+
+            {{item.skill}}
+
+          </li>
+
+        </ul>
+
+ 
+
+        </div> -->
+
+       
+
+       
+
+</div>
+
+ 
+
+ 
+
+<!-- <form (ngSubmit)="submitForm()">
+
+    <button type="submit">Submit</button>
+
+ 
+
+</form> -->
+
+<!--
+
+ 
+
+<div *ngFor="let item of questions">
+
+    <p>{{item.question}}</p> -->
+
+    <!-- <ng-container *ngIf="item.skill === 'radio'; else elseTemplate">
+
+        <app-radio [radioData]="item" ></app-radio>
+
+    </ng-container>
+
+    <ng-template #elseTemplate>
+
+        <app-checkbox></app-checkbox>
+
+    </ng-template>
+
+</div> -->
+
+</div>
+
+<!-- </body> -->
